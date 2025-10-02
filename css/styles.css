@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 10;
+    background: linear-gradient(to bottom, #4cf14c, #10bbff);
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#todo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50vw;
+    height: auto;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+#todo h1 {
+    margin-bottom: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1000;
+}
+
+#todo #inputContainer {
+    display: flex;
+    margin: 10px;
+}
+
+#todo input {
+    margin: 0px 10px;
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#todo #addListbtn {
+    margin: 0px 10px;
+    width: 10%;
+    padding: 10px;
+    background-color: #28a745;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}

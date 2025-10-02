@@ -1,9 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Main Page</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>This is the main content of the page.</p>
+    <div class="container">
+        <div id="todo">
+            <h1>Todo List</h1>
+            <form action="">
+                <div id="inputContainer">
+                    <input type="text" placeholder="Add list" required>
+                    <input type="date" id="tanggal" placeholder="mm/dd/yyyy" min="2020-" required>
+                    <button id="addListbtn">+</button>
+                    <script>
+                        let today = new Date().toISOString().split('T')[0];
+                    </script>
+                </div>
+            </form>
+            <p>This is the main page of the website.</p>
+            <a href="about.html">Go to About Page</a>
+        </div>
+    </div>
 </body> 
 </html>
