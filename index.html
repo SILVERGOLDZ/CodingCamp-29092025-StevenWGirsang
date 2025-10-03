@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+            <div id="todo">
+                <h1>Todo List</h1>
+                <form>
+                    <div id="inputContainer">
+                        <input id="todoInput" type="text" placeholder="Add list" required>
+                        <input id="todoDate" type="date" placeholder="mm/dd/yyyy" required>
+                        <button type="button" onclick="addList()" id="addListbtn">+</button>
+                        <script>
+                            let today = new Date().toISOString().split('T')[0];
+                            document.getElementById("todoDate").setAttribute('min', today);
+                        </script>
+                    </div>
+                </form>
+                <br><br>
+                <div id="delete-filter-container">
+                    <div id="filter-container">
+                        <p>Filter:</p>
+                        <input type="text" placeholder="add keyword...">
+                        <button onclick="filterDate()" class="btn" style="color: azure; background-color: rgb(111, 197, 255);">Apply</button>
+                    </div>
+              
+                    <button class="btn" onclick="deleteAll()">Delete All</button>
+
+                </div>
+
+                <table id="table-todo">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <!-- <th>No.</th> -->
+                            <th>Todo</th>
+                            <th>Date</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <!-- body -->
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+    </div>
+    <script src="js/script.js"></script>
+</body> 
+</html>
